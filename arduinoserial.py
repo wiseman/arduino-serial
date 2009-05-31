@@ -154,17 +154,17 @@ def main(args):
 def usage():
   print """Usage: arduino-serial.py -p <serialport> [OPTIONS]
 Options:
-  -h, --help                   Print this help message
-  -p, --port=serialport        Serial port Arduino is on
-  -b, --baud=baudrate          Baudrate (bps) of Arduino
-  -s, --send=data              Send data to Arduino
-  -r, --receive                Receive data from Arduino & print it out
-  -n  --num=num                Send a number as a single byte
-  -d  --delay=millis           Delay for specified milliseconds
+  -h, --help                   Print this help message.
+  -p, --port=serialport        Serial port Arduino is on.
+  -b, --baud=baudrate          Baudrate (bps) of Arduino.
+  -s, --send=data              Send data to Arduino.
+  -r, --receive                Receive data from Arduino & print it out.
+  -n  --num=num                Send a number as a single byte.
+  -d  --delay=millis           Delay for specified milliseconds.
 
 Note: Order is important. Set '-b' before doing '-p'.
       Used to make series of actions:  '-d 2000 -s hello -d 100 -r'
-      means 'wait 2secs, send 'hello', wait 100msec, get reply'
+      means 'wait 2secs, send 'hello', wait 100msec, get reply'.
 
 """
 
