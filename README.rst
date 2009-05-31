@@ -34,18 +34,18 @@ Complete command line usage information::
     -n  --num=num                Send a number as a single byte
     -d  --delay=millis           Delay for specified milliseconds
 
-Note: Order is important. Set '-b' before doing '-p'.
-      Used to make series of actions:  '-d 2000 -s hello -d 100 -r'
-      means 'wait 2secs, send 'hello', wait 100msec, get reply'
+  Note: Order is important. Set '-b' before doing '-p'.
+        Used to make series of actions:  '-d 2000 -s hello -d 100 -r'
+        means 'wait 2secs, send 'hello', wait 100msec, get reply'
 
 You can also import ``arduinoserial`` and use its ``SerialPort`` class
-to communicate with an Arduino from a Python program.
+to communicate with an Arduino from a Python program::
 
-import arduino_serial
+  import arduino_serial
 
-arduino = arduino_serial.SerialPort('/dev/ttyUSB0', 19200)
-print arduino.read_until('\n')
-arduino.write('a5050')
+  arduino = arduino_serial.SerialPort('/dev/ttyUSB0', 19200)
+  print arduino.read_until('\n')
+  arduino.write('a5050')
 
 [1] http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/
 [2] http://lemonodor.com/archives/2008/02/tilt.html
