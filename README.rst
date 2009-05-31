@@ -14,7 +14,7 @@ Send the string "a5050" to Arduino::
 
   $ ./arduinoserial.py -b 19200 -p /dev/tty.usbserial-A50018fz -s a5050
 
-This would cause the pan-tilt head described in this lemonodor post[2]_ to
+This would cause the pan-tilt head described in the `lemonodor post "Tilt"`_ to
 return to its middle position.
 
 Recieve a line of text from Arduino, wait 1000 milliseconds, then send
@@ -48,4 +48,4 @@ to communicate with an Arduino from a Python program::
   arduino.write('a5050')
 
 .. _Tod E. Kurt's arduino-serial.c program: http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/
-.. [2] http://lemonodor.com/archives/2008/02/tilt.html
+.. _lemonodor post "Tilt": http://lemonodor.com/archives/2008/02/tilt.html
