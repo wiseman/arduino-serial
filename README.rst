@@ -47,5 +47,10 @@ to communicate with an Arduino from a Python program::
   print arduino.read_until('\n')
   arduino.write('a5050')
 
+Also see the `lemonodor post "arduino_serial"`_.
+
+
+
 .. _Tod E. Kurt's arduino-serial.c program: http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/
 .. _lemonodor post "Tilt": http://lemonodor.com/archives/2008/02/tilt.html
+.. _lemonodor post "arduino serial": http://lemonodor.com/archives/2008/02/arduino_serial.html
