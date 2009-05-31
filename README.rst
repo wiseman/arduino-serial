@@ -1,8 +1,8 @@
 arduinoserial.py 
 ================
 
-``arduinoserial.py`` is a Python port of Tod E. Kurt's
-``arduino-serial.c`` program[1]_ for communicating with an Arduino
+``arduinoserial.py`` is a Python port of `Tod E. Kurt's
+arduino-serial.c program`_ for communicating with an Arduino
 microcontroller board over a serial port. It only uses standard Python
 modules (notably ``termios`` and ``fcntl``) and does not require any
 special serial communications modules.
@@ -47,5 +47,5 @@ to communicate with an Arduino from a Python program::
   print arduino.read_until('\n')
   arduino.write('a5050')
 
-.. [1] http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/
+.. _Tod E. Kurt's arduino-serial.c program http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/
 .. [2] http://lemonodor.com/archives/2008/02/tilt.html
