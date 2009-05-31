@@ -41,9 +41,9 @@ Complete command line usage information::
 You can also import ``arduinoserial`` and use its ``SerialPort`` class
 to communicate with an Arduino from a Python program::
 
-  import arduino_serial
+  import arduinoserial
 
-  arduino = arduino_serial.SerialPort('/dev/ttyUSB0', 19200)
+  arduino = arduinoserial.SerialPort('/dev/ttyUSB0', 19200)
   print arduino.read_until('\n')
   arduino.write('a5050')
 
