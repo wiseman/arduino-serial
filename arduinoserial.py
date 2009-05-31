@@ -171,6 +171,3 @@ Note: Order is important. Set '-b' before doing '-p'.
 
 if __name__ == '__main__':
   main(sys.argv)
-  
-  
-    
