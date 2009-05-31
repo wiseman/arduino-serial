@@ -12,9 +12,12 @@ Like Tod's program, you can use it from the command line.
 Send the string "a5050" to Arduino::
 
 $ ./arduino_serial.py -b 19200 -p /dev/tty.usbserial-A50018fz -s a5050
-This would cause the pan-tilt head described in this previous post to return to its middle position.
 
-Recieve a line of text from Arduino, wait 1000 milliseconds, then send the string "a0000"::
+This would cause the pan-tilt head described in this previous post to
+return to its middle position.
+
+Recieve a line of text from Arduino, wait 1000 milliseconds, then send
+the string "a0000"::
 
 $ ./arduino_serial.py -b 19200 -p /dev/tty.usbserial-A50018fz -r -d 1000 -s a0000
 
