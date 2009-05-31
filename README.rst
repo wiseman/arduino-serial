@@ -47,5 +47,5 @@ to communicate with an Arduino from a Python program::
   print arduino.read_until('\n')
   arduino.write('a5050')
 
-[1] http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/
-[2] http://lemonodor.com/archives/2008/02/tilt.html
+.. [1] http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/
+.. [2] http://lemonodor.com/archives/2008/02/tilt.html
