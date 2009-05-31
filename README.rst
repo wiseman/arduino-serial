@@ -2,7 +2,7 @@ arduinoserial.py
 ================
 
 ``arduinoserial.py`` is a Python port of Tod E. Kurt's
-``arduino-serial.c`` program[1] for communicating with an Arduino
+``arduino-serial.c`` program[1]_ for communicating with an Arduino
 microcontroller board over a serial port. It only uses standard Python
 modules (notably ``termios`` and ``fcntl``) and does not require any
 special serial communications modules.
@@ -14,7 +14,7 @@ Send the string "a5050" to Arduino::
 
   $ ./arduinoserial.py -b 19200 -p /dev/tty.usbserial-A50018fz -s a5050
 
-This would cause the pan-tilt head described in this lemonodor post[2] to
+This would cause the pan-tilt head described in this lemonodor post[2]_ to
 return to its middle position.
 
 Recieve a line of text from Arduino, wait 1000 milliseconds, then send
@@ -24,7 +24,7 @@ the string "a0000"::
 
 Complete command line usage information::
 
-  Usage: arduino-serial.py -p <serialport> [OPTIONS]
+  Usage: arduinoserial.py -p <serialport> [OPTIONS]
   Options:
     -h, --help                   Print this help message
     -p, --port=serialport        Serial port Arduino is on
