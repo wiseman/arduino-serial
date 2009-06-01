@@ -50,7 +50,8 @@ to communicate with an Arduino from a Python program::
 Also see the `lemonodor post "arduino_serial"`_.
 
 
-MIT License:
+MIT License
+-----------
 
 Copyright (c) 2009 John Wiseman
 
