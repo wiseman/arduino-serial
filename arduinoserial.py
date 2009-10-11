@@ -95,7 +95,8 @@ class SerialPort:
     attrs[LFLAG] &= ~(termios.ICANON | termios.ECHO | termios.ECHOE | termios.ISIG)
     attrs[OFLAG] &= ~termios.OPOST
 
-    # See http://unixwiz.net/techtips/termios-vmin-vtime.html
+    # It's complicated--See
+    # http://unixwiz.net/techtips/termios-vmin-vtime.html
     attrs[CC][termios.VMIN] = 0;
     attrs[CC][termios.VTIME] = 20;
     termios.tcsetattr(self.fd, termios.TCSANOW, attrs)
@@ -106,6 +107,7 @@ class SerialPort:
     while not done:
       n = os.read(self.fd, 1)
       if n == '':
+        # FIXME: Maybe worth blocking instead of busy-looping?
         time.sleep(0.01)
         continue
       buf = buf + n
