@@ -151,8 +151,8 @@ def main(args):
             elif o == '-r' or o == '--receive':
                 print('Read %s' % (port.read_until('\n'),))
         sys.exit(0)
-    except getopt.GetoptError, e:
-        sys.stderr.write("%s: %s\n" % (args[0], e.msg))
+    except getopt.GetoptError as e:
+        sys.stderr.write('%s: %s\n' % (args[0], e.msg))
         usage()
         sys.exit(1)
 
