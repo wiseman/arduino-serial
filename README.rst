@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.org/wiseman/arduino-serial.svg?branch=master
+    :target: https://travis-ci.org/wiseman/arduino-serial
+
 arduinoserial.py 
 ================
 
