@@ -26,6 +26,7 @@
 A port of Tod E. Kurt's arduino-serial.c.
 <http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/>
 """
+from future import print_function
 
 import termios
 import os
@@ -148,7 +149,7 @@ def main(args):
             elif o == '-s' or o == '--send':
                 port.write(v)
             elif o == '-r' or o == '--receive':
-                print "Read %s" % (port.read_until('\n'),)
+                print('Read %s' % (port.read_until('\n'),))
         sys.exit(0)
     except getopt.GetoptError, e:
         sys.stderr.write("%s: %s\n" % (args[0], e.msg))
@@ -157,7 +158,7 @@ def main(args):
 
 
 def usage():
-    print """Usage: arduino-serial.py -p <serialport> [OPTIONS]
+    print("""Usage: arduino-serial.py -p <serialport> [OPTIONS]
 Options:
   -h, --help                   Print this help message.
   -p, --port=SERIALPORT        Serial port Arduino is on.
@@ -169,7 +170,7 @@ Options:
 
 Note: Order is important. Set '-b' before doing '-p'.
       Used to make series of actions:  '-d 2000 -s hello -d 100 -r'
-      means 'wait 2 seconds, send 'hello', wait 100 msec, get reply'.\n"""
+      means 'wait 2 seconds, send 'hello', wait 100 msec, get reply'.\n""")
 
 
 if __name__ == '__main__':
