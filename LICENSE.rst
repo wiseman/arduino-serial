@@ -1,4 +1,5 @@
 MIT License
+===========
 
 Copyright (c) 2009 John Wiseman
 
