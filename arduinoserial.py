@@ -26,7 +26,7 @@
 A port of Tod E. Kurt's arduino-serial.c.
 <http://todbot.com/blog/2006/12/06/arduino-serial-c-code-to-talk-to-arduino/>
 """
-from future import print_function
+from __future__ import print_function
 
 import termios
 import os
